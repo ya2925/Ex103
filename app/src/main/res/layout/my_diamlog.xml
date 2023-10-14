@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/seriesType"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.5"
+            android:onClick="changeMode"
+            android:text="Click to change modes" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.7"
+            android:text="The first number" />
+
+        <EditText
+            android:id="@+id/firstIntense"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/dOrQ"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="The difference/multiplier of the series" />
+
+        <EditText
+            android:id="@+id/differenceMultiplier"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+</LinearLayout>

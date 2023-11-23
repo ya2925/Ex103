@@ -4,61 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
-    <Space
-        android:layout_width="0px"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
-
-    <LinearLayout
+    <ListView
+        android:id="@+id/Lv_series"
         android:layout_width="0px"
         android:layout_height="match_parent"
-        android:layout_weight="4"
+        android:layout_weight="3">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/informationLayout"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
         android:orientation="vertical">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="5" />
-
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="6"
-            android:text="Series Calculator"
+            android:layout_height="wrap_content"
+            android:text="Information"
             android:textAlignment="center"
-            android:textSize="48sp"
+            android:textSize="40sp"
             android:textStyle="bold" />
 
-        <Space
+        <TextView
+            android:id="@+id/x1"
             android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="3" />
+            android:layout_height="wrap_content"
+            android:text="X1 = "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textDifferenceMultiplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="differenceMultiplier = "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/whereN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="location n = "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sumN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sum up to n = "
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="start"
-            android:text="click to start getting input" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="goToCredits"
-            android:text="credits" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="6" />
+            android:text="Add info" />
     </LinearLayout>
-
-    <Space
-        android:layout_width="0px"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
 </LinearLayout>

@@ -1,8 +1,11 @@
 package com.yanir.ex103;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 /**
@@ -20,10 +23,22 @@ public class credits extends AppCompatActivity {
     }
 
     /**
-     * this method will be called when the back button is clicked and it will finish the activity
-     * @param view the view
+     * This function presents the options menu for moving between activities.
+     * @param menu The options menu in which you place your items.
+     * @return true in order to show the menu, otherwise false.
      */
-    public void finishActivity(View view) {
-        finish();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.manu, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+        System.out.println(item.getTitle().toString());
+        if (item.getTitle().toString().equals("main")){
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

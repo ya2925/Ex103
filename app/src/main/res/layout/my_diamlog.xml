@@ -30,7 +30,7 @@
             android:layout_height="0px"
             android:layout_weight="1.5"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="numberSigned|numberDecimal" />
 
         <TextView
             android:id="@+id/dOrQ"
@@ -45,7 +45,7 @@
             android:layout_height="0dp"
             android:layout_weight="1.5"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="numberSigned|numberDecimal" />
 
     </LinearLayout>
 </LinearLayout>
